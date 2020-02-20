@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 gnomeVersion=($(
-    version_string=$(LANGUAGE=en_US.UTF-8 gnome-terminal --version)
+    version_string=$(LANGUAGE=en_GB.UTF-8 gnome-terminal --version)
     [[ $version_string =~ ([0-9]+((\.[0-9]+)*)) ]] && version=${BASH_REMATCH[1]}
     echo ${version//./ }
 ))
