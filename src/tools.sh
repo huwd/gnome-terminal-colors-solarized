@@ -7,7 +7,7 @@ gnomeVersion=($(
 ))
 
 # newGnome=1 if the gnome-terminal version >= 3.8
-if [[ 
+if [[
     ( ${gnomeVersion[0]} -eq 3 && ${gnomeVersion[1]} -ge 8 )
     || ${gnomeVersion[0]} -ge 4
 ]]; then
